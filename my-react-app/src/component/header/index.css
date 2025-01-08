@@ -1,0 +1,165 @@
+*, :after, :before {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position: ;
+    --tw-gradient-via-position: ;
+    --tw-gradient-to-position: ;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59, 130, 246, .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
+    --tw-contain-size: ;
+    --tw-contain-layout: ;
+    --tw-contain-paint: ;
+    --tw-contain-style: ;
+    box-sizing: border-box;
+    border: 0 solid;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+    --y-xxxs: 0.25rem;
+    --y-xxs: 0.4rem;
+    --y-xs: 0.8rem;
+    --y-s: 1.6rem;
+    --y-m: 2.4rem;
+    --y-l: 3.2rem;
+    --y-xl: 4.8rem;
+    --y-xxl: 6.4rem;
+    --x-xxs: 0.4rem;
+    --x-xs: 0.8rem;
+    --x-s: 1.6rem;
+    --x-m: 2.4rem;
+    --x-l: 3.2rem;
+    --x-xl: 4.8rem;
+    --x-xxl: 6.4rem;
+  }
+
+  
+  .btn {
+    display: inline-flex; /* Ensures it respects content size */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    border-radius: 999em;
+    color: rgb(0, 0, 0);
+    font-family: CoFo Sans Mono, sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative; /* Needed for pseudo-elements */
+    overflow: hidden; /* Ensures the background animation stays within bounds */
+    border: 1px solid #3b42c4;
+    padding: 0;
+}
+
+.btn__inner {
+    display: flex; /* Use flex for proper centering */
+    justify-content: center;
+    align-items: center;
+    padding: 5px; /* Space around content */
+    z-index: 2;
+    overflow: hidden;
+    border-radius: inherit;
+}
+
+.btn__label {
+    display: flex; /* Flex ensures content is centered */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 1em 2em; /* Balanced padding for horizontal and vertical alignment */
+    border-radius: inherit;
+    color: transparent; /* Makes base text invisible */
+    white-space: nowrap;
+    z-index: 2;
+    line-height: 1; /* Prevents text from appearing misaligned vertically */
+}
+
+.btn__label:before,
+.btn__label:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+    padding: 10px 20px; /* Matches `.btn__label` padding */
+    transition: transform 0.3s cubic-bezier(1, 0, 0, 1) 0s;
+    text-align: center;
+    line-height: 1; /* Ensures consistent vertical alignment */
+}
+
+.btn__label:before {
+    transform: translate(-50%, -50%);
+    content: attr(data-label);
+}
+
+.btn__label:after {
+    transform: translate(-50%, calc(-50% - 100%));
+    content: attr(data-hover);
+}
+
+.btn__label__background {
+    position: absolute;
+    inset: -100px;
+    display: inline-block;
+    background: #ffffff;
+    background-blend-mode: overlay;
+    animation: noise-background 0.5s steps(1) infinite;
+    z-index: 1;
+}
+
+.btn.scrollShadow .btn__label__background {
+    background: #3b42c4; /* Change when scrollShadow is active */
+}
+
+.btn:hover .btn__label:before {
+    transform: translate(-50%, calc(-50% + 100%));
+}
+
+.btn:hover .btn__label:after {
+    transform: translate(-50%, -50%);
+}

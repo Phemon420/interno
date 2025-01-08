@@ -1,0 +1,85 @@
+.custom-btn {
+    display: inline-flex; /* Ensures it respects content size */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    border-radius: 999em;
+    color: rgb(255, 255, 255);
+    font-family: CoFo Sans Mono, sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative; /* Needed for pseudo-elements */
+    overflow: hidden; /* Ensures the background animation stays within bounds */
+    border: none;
+    padding: 0;
+}
+
+.custom-btn__inner {
+    display: flex; /* Use flex for proper centering */
+    justify-content: center;
+    align-items: center;
+    padding: 5px; /* Space around content */
+    z-index: 2;
+    overflow: hidden;
+    border-radius: inherit;
+}
+
+.custom-btn__label {
+    display: flex; /* Flex ensures content is centered */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 1.4em 2em; 
+    border-radius: inherit;
+    color: transparent; /* Makes base text invisible */
+    white-space: nowrap;
+    z-index: 2;
+    line-height: 1; /* Prevents text from appearing misaligned vertically */
+}
+
+.custom-btn__label:before,
+.custom-btn__label:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: inline-block;
+    color: rgb(255, 249, 249);
+    white-space: nowrap;
+    padding: 10px 20px; /* Matches `.custom-btn__label` padding */
+    transition: transform 0.3s cubic-bezier(1, 0, 0, 1) 0s;
+    text-align: center;
+    line-height: 1; /* Ensures consistent vertical alignment */
+}
+
+.custom-btn__label:before {
+    transform: translate(-50%, -50%);
+    content: attr(data-label);
+}
+
+.custom-btn__label:after {
+    transform: translate(-50%, calc(-50% - 100%));
+    content: attr(data-hover);
+}
+
+.custom-btn__label__background {
+    position: absolute;
+    inset: -100px;
+    display: inline-block;
+    background: #3b42c4;
+    background-blend-mode: overlay;
+    animation: noise-background 0.5s steps(1) infinite;
+    z-index: 1;
+}
+
+.custom-btn:hover .custom-btn__label:before {
+    transform: translate(-50%, calc(-50% + 100%));
+}
+
+.custom-btn:hover .custom-btn__label:after {
+    transform: translate(-50%, -50%);
+}
