@@ -70,7 +70,7 @@
     position: absolute;
     inset: -100px;
     display: inline-block;
-    background: #3b42c4;
+    background: #DC143C;
     background-blend-mode: overlay;
     animation: noise-background 0.5s steps(1) infinite;
     z-index: 1;

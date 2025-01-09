@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, styled, Typography, Link } from "@mui/material";
+import logo from '../../../assets/2.png'
 
 // Styled components
 const StyledSection = styled(Box)(({ theme }) => ({
@@ -52,13 +53,14 @@ const Lower1 = () => {
         <StyledFooter>
           {/* Footer Column 1 */}
           <FooterColumn>
-            <img src="https://mccdn.me/martech/next-lp//_next/static/media/logo-white.93c1c234.svg" width="50" height="50"></img>
+            {/* <img src="https://mccdn.me/martech/next-lp//_next/static/media/logo-white.93c1c234.svg" width="50" height="50"></img> */}
+            <img src={logo} width="200" height="200"></img>
           </FooterColumn>
 
           {/* Footer Column 2 */}
           <Kgf>
           <FooterColumn>
-            <Typography variant="h5">Manychat</Typography>
+            <Typography variant="h5">BuzzBuddy</Typography>
             <Link href="#">About</Link>
             <Link href="#">Careers</Link>
             <Link href="#">Privacy & Security</Link>

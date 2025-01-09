@@ -4,6 +4,12 @@ import first from "../../../assets/steps_01.svg";
 import second from "../../../assets/steps_02.svg";
 import third from "../../../assets/steps_03.svg";
 import { useInViewport } from "react-in-viewport";
+import first1 from "../../../assets/puzzle1.png";
+import second1 from "../../../assets/chat1.png";
+import third1 from "../../../assets/social1.svg";
+import first2 from "../../../assets/puzzle2.png";
+import second2 from "../../../assets/chat2.png";
+import third2 from "../../../assets/social2.svg";
 
 const CardContainer = styled(Box)`
   background-color:#edf2ed;
@@ -112,7 +118,7 @@ const Btn = styled('a')({
   textTransform: 'uppercase',
   position: 'relative',
   overflow: 'hidden',
-  border: '1px solid #3b42c4',
+  border: '1px solid #DC143C',
   padding: 0,
 });
 
@@ -166,7 +172,7 @@ const BtnLabelBackground = styled('span')({
   position: 'absolute',
   inset: '-100px',
   display: 'inline-block',
-  background: '#3b42c4',
+  background: '#DC143C',
   backgroundBlendMode: 'overlay',
   animation: 'noise-background 0.5s steps(1) infinite',
   zIndex: 1,
@@ -221,7 +227,7 @@ const Card2 = () => {
   return (
     <Emy styled={{marginbottom:100}} ref={wrapperRef} className={hasEntered ? "visible" : ""}>
         <Texto>
-            Get started with Manychat
+            Get started with Buzz Buddy
         </Texto>
         <Cde>
       <Box>
@@ -229,7 +235,7 @@ const Card2 = () => {
           <Lol>
             <Kgf>step 1.</Kgf>
             <ImageContainer>
-              <img src={first} loading="lazy" width="100%" height="100%" />
+              <img src={first1} loading="lazy" width="70%" height="100%" />
             </ImageContainer>
             <Bs/>
             <TextContainer>
@@ -249,7 +255,7 @@ const Card2 = () => {
           <Lol>
           <Kgf>step 2.</Kgf>
             <ImageContainer>
-              <img src={second} loading="lazy" width="100%" height="100%" />
+              <img src={second2} loading="lazy" width="75%" height="100%" />
             </ImageContainer>
             <Bs/>
             <TextContainer>
@@ -269,7 +275,7 @@ const Card2 = () => {
           <Lol>
           <Kgf>step 3.</Kgf>
             <ImageContainer>
-              <img src={third} loading="lazy" width="100%" height="100%" />
+              <img src={third2} loading="lazy" width="100%" height="100%" />
             </ImageContainer>
             <Bs/>
             <TextContainer>

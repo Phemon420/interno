@@ -79,9 +79,11 @@ const L4 = () => {
       <Wrapper ref={wrapperRef} className={hasEntered ? "visible" : ""}>
       <Rightcontainer>
           <Box>
-            <Lol>Claim back your time & slash costs</Lol>
+            {/* <Lol>Claim back your time & slash costs</Lol> */}
+            <Lol>More push and attention</Lol>
             <Foul>
-                Automate responses to all your FAQs with Manychat. Streamline communication and ensure 24/7 timely replies.
+                Attract more brands and audience 
+                {/* Automate responses to all your FAQs with Manychat. Streamline communication and ensure 24/7 timely replies. */}
             </Foul>
             <a
               href="https://incredibles.dev"

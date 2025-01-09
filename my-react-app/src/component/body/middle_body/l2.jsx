@@ -79,12 +79,14 @@ const L2 = () => {
       <Wrapper ref={wrapperRef} className={hasEntered ? "visible" : ""}>
       <Rightcontainer>
           <Box>
-            <Lol>Increase conversion rates by up to 90%</Lol>
+            {/* <Lol>Increase conversion rates by up to 90%</Lol> */}
+            <Lol>Better experience with efficiency</Lol>
             <Foul>
-                With Manychat, a lead never slips away, and a
+                {/* With Manychat, a lead never slips away, and a
                 follow-up opportunity is never missed. Identify 
                 interested leads and reengage them without 
-                running expensive retargeting ad campaigns.
+                running expensive retargeting ad campaigns. */}
+                slove 90% small problems and book calendars for 10% important ones
             </Foul>
             <a
               href="https://incredibles.dev"

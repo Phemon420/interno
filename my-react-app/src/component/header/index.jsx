@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {Nav,NavLogo,NavLink,Bars,NavMenu,NavBtn,LanguageDropdownContainer,NavLink1} from './NavbarElements';
 import Logo from '../../assets/logo.svg'
+import name from '../../assets/name.png'
 import LanguageSelectDropdown from './LanguageSelectDropdown'
 import { colors } from "@mui/material";
 import "./index.css"
@@ -9,6 +10,8 @@ const Navbar = () => {
     const [scrollShadow, setScrollShadow] = useState(false);
 
   const handleScroll = () => {
+    const btn = document.querySelector(".btn");
+    
     if (window.scrollY > 10) {
       setScrollShadow(true);
     } else {
@@ -33,7 +36,7 @@ const Navbar = () => {
         <>
            <Nav scrollShadow={scrollShadow}>
             <NavLogo to="/">
-                <img src={Logo}/>
+                <img src={name} height={50} width={185}/>
             </NavLogo>
             <LanguageDropdownContainer>
                 <LanguageSelectDropdown />

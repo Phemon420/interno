@@ -12,7 +12,7 @@ const Cde = styled(Box)`
     margin-top: 50px;
     padding: 0;
     gap: 10px;
-    margin-left: 16%;
+    margin-left: 15%;
     margin-right: 14%; 
 
     & > div {

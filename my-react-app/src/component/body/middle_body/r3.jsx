@@ -89,9 +89,11 @@ const R3 = () => {
         </Leftcontainer>
         <Rightcontainer>
           <Box>
-            <Lol>Automatically respond to every message</Lol>
+            {/* <Lol>Automatically respond to every message</Lol> */}
+            <Lol>Higher engagement and reviews</Lol>
             <Foul>
-            Instantly engage with each message, reaction, and mention, so you attract customers faster than ever before and never miss an opportunity with a potential lead.
+            {/* Instantly engage with each message, reaction, and mention, so you attract customers faster than ever before and never miss an opportunity with a potential lead. */}
+            The more satisfier the client, the higher retention rate
             </Foul>
             <a
               href="https://incredibles.dev"

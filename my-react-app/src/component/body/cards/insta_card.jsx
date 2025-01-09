@@ -2,6 +2,7 @@ import {React,useState} from "react";
 import { colors, styled } from "@mui/material";
 import insta from "../../../assets/channels_instagram-dm.svg"
 import { Box } from "@mui/material";
+import building from "../../../assets/building.png"
 
 
 const CardContainer = styled(Box)`
@@ -189,15 +190,15 @@ const Insta = () => {
       isHovered={isHovered}>
         <Lol>
             <ImageContainer>
-                <img src={insta} loading="lazy" width="70" height="64"/>
+                <img src={building} loading="lazy" width="80" height="70"/>
             </ImageContainer>
 
             <TextContainer>
-                <Gfg>Instagram DMs</Gfg>
+                <Gfg>Bussiness Description</Gfg>
                 <Abc>
-                    Answer every single question,<br/> comment, and story reply 24/7,
-                    to<br/> attract more leads, increase sales,<br/> and&nbsp;
-                    drive higher conversions on IG
+                    Introduce service and products anywhere, anytime
+                    Provide advice to customers among thousands of SKUs
+                    Transfer to human help at any time
                 </Abc>
             </TextContainer>
 

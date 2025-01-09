@@ -4,6 +4,9 @@ import first from "../../../assets/blog-story_nike-football.avif";
 import second from "../../../assets/blog-story_mindvalley.avif";
 import third from "../../../assets/kinarewala.png";
 import { useInViewport } from "react-in-viewport";
+import first1 from "../../../assets/football.png";
+import second1 from "../../../assets/automation.png";
+import third1 from "../../../assets/growth.jpg";
 
 const CardContainer = styled(Box)`
   background: #edf2ed;
@@ -46,6 +49,10 @@ const Cde = styled(Box)`
       transform: scale(1); /* Restore to original size */
     }
 `;
+
+const Ere=styled("div")`
+  background: #edf2ed;
+`
 
 const ImageContainer = styled(Box)`
   display: flex;
@@ -120,16 +127,34 @@ const Card1 = () => {
         >
           <Lol>
             <ImageContainer>
-              <img src={first} loading="lazy" width="100%" height="50%" />
+              <img src={first1} loading="lazy" width="100%" height="50%" />
             </ImageContainer>
             <TextContainer>
               <Abc>
-                How Nike Football leveraged Manychat to bring the Engage Mbappé Mode campaign to life
+                How Nike Football leveraged Buzz Buddy to bring the Engage Mbappé Mode campaign to life
               </Abc>
             </TextContainer>
           </Lol>
         </CardContainer>
       </Box>
+      <Ere>
+        <CardContainer
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          isHovered={isHovered}
+        >
+          <Lol>
+            <ImageContainer>
+              <img src={second1} loading="lazy" width="100%" height="50%" />
+            </ImageContainer>
+            <TextContainer>
+              <Abc>
+                How buzz buddy Achieved A 522% Increase in Masterclass Sign-Ups Using Instagram Automation
+              </Abc>
+            </TextContainer>
+          </Lol>
+        </CardContainer>
+      </Ere>
       <Box>
         <CardContainer
           onMouseEnter={() => setIsHovered(true)}
@@ -138,25 +163,7 @@ const Card1 = () => {
         >
           <Lol>
             <ImageContainer>
-              <img src={second} loading="lazy" width="100%" height="50%" />
-            </ImageContainer>
-            <TextContainer>
-              <Abc>
-                How Mindvalley Achieved A 522% Increase in Masterclass Sign-Ups Using Instagram Automation
-              </Abc>
-            </TextContainer>
-          </Lol>
-        </CardContainer>
-      </Box>
-      <Box>
-        <CardContainer
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-          isHovered={isHovered}
-        >
-          <Lol>
-            <ImageContainer>
-              <img src={third} loading="lazy" width="100%" height="50%" />
+              <img src={third1} loading="lazy" width="100%" height="50%" />
             </ImageContainer>
             <TextContainer>
               <Abc>

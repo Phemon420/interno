@@ -16,7 +16,7 @@ const Abc=styled('Box')`
     letter-spacing: .01em;
     max-width: 113.6rem;
     margin-top:1%;
-    margin-bottom:2px;
+    margin-bottom:15px;
 `
 
 const Loli=styled('Box')`
@@ -48,7 +48,7 @@ const Texti= () => {
     return (
         <>
             <Abc>
-                <Loli>Unleash the power <br></br> of chat marketing</Loli>
+                <Loli>Chat marketing <br/> rockets your sales</Loli>
                 <div>
                     <Holi>Drive more sales and conversions on Instagram, WhatsApp,<br></br> and Messenger using automation.</Holi>
                 </div>

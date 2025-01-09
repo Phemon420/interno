@@ -1,8 +1,8 @@
 import {React,useState} from "react";
 import { colors, styled } from "@mui/material";
-import face from "../../../assets/channels_facebook-messenger.svg"
+import face from "../../../assets/channels_facebook-messenger.svg";
 import { Box } from "@mui/material";
-
+import problem from "../../../assets/problem.png";
 
 const CardContainer = styled(Box)`
   background: #edf2ed;
@@ -189,15 +189,15 @@ const Face = () => {
       isHovered={isHovered}>
         <Lol>
             <ImageContainer>
-                <img src={face} loading="lazy" width="70" height="64"/>
+                <img src={problem} loading="lazy" width="70" height="64"/>
             </ImageContainer>
 
             <TextContainer>
-                <Gfg>Facebook  Messenger</Gfg>
+                <Gfg>Solving problems</Gfg>
                 <Abc>
-                    Manychat for Messenger automates  conversations to&nbsp;
-                    fuel more sales,<br></br> generate leads, automate FAQs and <br/> run&nbsp;
-                    marketing campaigns
+                  Problem noting, ticket creation, email notification for different industries
+                  Book calendar with interested clients
+                  Transfer to human help at any time
                 </Abc>
             </TextContainer>
 

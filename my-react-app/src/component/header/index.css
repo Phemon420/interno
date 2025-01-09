@@ -88,7 +88,7 @@
     text-transform: uppercase;
     position: relative; /* Needed for pseudo-elements */
     overflow: hidden; /* Ensures the background animation stays within bounds */
-    border: 1px solid #3b42c4;
+    border: 1px solid #DC143C;
     padding: 0;
 }
 
@@ -99,7 +99,7 @@
     padding: 5px; /* Space around content */
     z-index: 2;
     overflow: hidden;
-    border-radius: inherit;
+    border-radius: inherit;   
 }
 
 .btn__label {
@@ -153,7 +153,21 @@
 }
 
 .btn.scrollShadow .btn__label__background {
-    background: #3b42c4; /* Change when scrollShadow is active */
+    background: #DC143C; /* Change when scrollShadow is active */
+}
+
+
+.btn.scrollShadow .btn {
+    border: 1px solid #DC143C;
+}
+
+.btn.scrollShadow .btn__label:before,
+.btn__label:after {
+    color: rgb(255, 255, 255);
+}
+
+.btn.scrollShadow .btn__inner {
+    background-color: #DC143C;
 }
 
 .btn:hover .btn__label:before {

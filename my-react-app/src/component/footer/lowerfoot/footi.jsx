@@ -131,7 +131,7 @@ const Upperfoot = () => {
         <>
            <Duck>
                 <Xyz>
-                    <Texto>Try Manychat for free</Texto>
+                    <Texto>Try BuzzBuddy for free</Texto>
                     <Lol>Transform more conversations into sales, leads,<br/> and conversions today</Lol>
                 </Xyz>
                 <Btn href="https://incredibles.dev" target="_blank">

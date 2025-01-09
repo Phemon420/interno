@@ -182,7 +182,8 @@ const R5 = () => {
         </Leftcontainer>
         <Rightcontainer>
           <Box>
-            <Lol>Manychat AI: A Smarter Way to Chat Automation</Lol>
+            {/* <Lol>Manychat AI: A Smarter Way to Chat Automation</Lol> */}
+            <Lol>Buzz Buddy AI: A Smarter Way to Chat Automation</Lol>
             <Foul>
             Level up the experiences your followers already love, with the new Manychat AI.
             </Foul>

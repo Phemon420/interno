@@ -91,11 +91,12 @@ const R1 = () => {
         </Leftcontainer>
         <Rightcontainer>
           <Box>
-            <Lol>Supercharge your lead generation</Lol>
+            <Lol>Respond immediately</Lol>
             <Foul>
-              Attract and engage with customers where they are when they are
+              {/* Attract and engage with customers where they are when they are
               ready. Capture the email addresses and phone numbers for up to
-              80% of your leads, and add them automatically to your databases.
+              80% of your leads, and add them automatically to your databases. */}
+              No waiting time for your clients with 24/7 support
             </Foul>
             <a
               href="https://incredibles.dev"

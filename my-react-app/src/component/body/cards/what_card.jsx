@@ -1,8 +1,8 @@
 import {React,useState} from "react";
 import { colors, styled } from "@mui/material";
-import what from "../../../assets/channels_whatsapp.svg"
+import what from "../../../assets/channels_whatsapp.svg";
 import { Box } from "@mui/material";
-
+import appoint from "../../../assets/appointment.png";
 
 const CardContainer = styled(Box)`
   background: #edf2ed;
@@ -190,16 +190,14 @@ const What = () => {
     isHovered={isHovered}>
         <Lol>
             <ImageContainer>
-                <img src={what} loading="lazy" width="70" height="64"/>
+                <img src={appoint} loading="lazy" width="70" height="64"/>
             </ImageContainer>
 
             <TextContainer>
-                <Gfg>WhatsApp</Gfg>
+                <Gfg>Appointment booking</Gfg>
                 <Abc>
-                    Use WhatsApp Automation to&nbsp;
-                    help<br/> customers discover products, 
-                    retrieve<br/> order information and deliver 
-                    customer<br/> support — all on autopilot
+                  After sales support, could enable trouble shooting step by step
+                  Customer service, asking information about order and track locations, inventories, deals
                 </Abc>
             </TextContainer>
 

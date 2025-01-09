@@ -52,28 +52,28 @@ const Text2= () => {
     return (
         <Real ref={wrapperRef} className={hasEntered ? "visible" : ""}>
             <Texto>
-                Discover why 1M+ brands trust Manychat
+                Discover why 1M+ brands trust Buzz buddy
             </Texto>
             <div class="gfg">
                 <div class="flex flex_fdc">
                     <span class="h2 text_cobalt">1M+</span>
                     <span class="h4 m_t-xs">Businesses</span>
-                    <span class="abg">chose Manychat to grow</span>
+                    <span class="abg">chose Buzzbuddy to grow</span>
                 </div>
                 <div class="flex flex_fdc">
                     <span class="h2 text_cobalt">4B+</span>
                     <span class="h4 m_t-xs">Conversations</span>
-                    <span class="abg">powered by Manychat </span>
+                    <span class="abg">powered by Buzzbuddy </span>
                 </div>
                 <div class="flex flex_fdc">
                     <span class="h2 text_cobalt">170+</span>
                     <span class="h4 m_t-xs">Countries</span>
-                    <span class="abg">use Manychat across the world</span>
+                    <span class="abg">use Buzzbuddy across the world</span>
                 </div>
                 <div class="flex flex_fdc">
                     <span class="h2 text_cobalt">#1</span>
                     <span class="h4 m_t-xs">Platform</span>
-                    <span class="abg">Manychat is the leading marketing tool</span>
+                    <span class="abg">Buzzbuddy is the leading marketing tool</span>
                 </div>
             </div>
         </Real>
